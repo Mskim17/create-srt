@@ -1,0 +1,7 @@
+[env]
+# Homebrew로 설치한 llvm 경로를 자동으로 지정
+PATH = { value = "/opt/homebrew/opt/llvm/bin", relative = false }
+LDFLAGS = { value = "-L/opt/homebrew/opt/llvm/lib", relative = false }
+CPPFLAGS = { value = "-I/opt/homebrew/opt/llvm/include", relative = false }
+CC = "/opt/homebrew/opt/llvm/bin/clang"
+CXX = "/opt/homebrew/opt/llvm/bin/clang++"

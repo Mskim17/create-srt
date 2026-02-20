@@ -1,0 +1,14 @@
+[package]
+name = "create-srt"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+whisper-rs = { version = "0.14.1", features = ["coreml"] }
+# WAV 파일 읽기용
+hound = "3.5.0"
+# 에러 처리 편의성
+anyhow = "1.0"
+ffmpeg-next = "8.0.0"
+# 파일 다이알로그
+rfd = "0.14"
